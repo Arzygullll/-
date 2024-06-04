@@ -1,0 +1,10 @@
+.figure-container {
+  stroke: #000;
+  stroke-width: 4px;
+  fill: none;
+}
+
+.figure-container line,
+.figure-container circle {
+  stroke: #000;
+}

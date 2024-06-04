@@ -1,13 +1,106 @@
 body {
+  font-family: "Arial", sans-serif;
+  background-image: url("https://png.klev.club/uploads/posts/2024-04/png-klev-club-fd2s-p-list-tetradi-png-11.png");
+  background-size: cover;
+  color: #ffffff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #61dafb;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+button {
+  background: linear-gradient(135deg, #61dafb 0%, #21a1f1 100%);
+  border: none;
+  border-radius: 10px;
+  color: #282c34;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px 20px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #21a1f1 0%, #61dafb 100%);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.word-display {
+  font-size: 28px;
+  margin: 20px 0;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.attempts-left {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.hangman-figure {
+  margin: 20px 0;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.keyboard button {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.theme-buttons {
+  margin-top: 10px;
+}
+
+.theme-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.game-over {
+  color: #ff4c4c;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.game-won {
+  color: #28a745;
+  font-size: 1.5em;
+  font-weight: bold;
 }
